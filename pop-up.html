@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leetcode Stats</title>
+    <link rel="stylesheet" href="pop-up.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="handleInputContainer">
+        <input type="text" id="handleName" placeholder="Enter your Handle">
+        <button id="fetchData">Submit</button>
+    </div>
+
+    <div id="dataContainer" class="hidden">
+        <div class="handleDisplaySection" id="handleDisplaySection">
+            <div class="imageContainer">
+                <img id="userImage" src="" alt="Description of Image">
+            </div>
+            <div class="displayName">
+                <span class="realName"></span>
+                <div class="editContainer">
+                    <span class="handleDisplay"></span>
+                    <button id="editHandle">Edit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="statsContainer" id="statsContainer">
+            <div class="problemStats" id="problemStats">
+                <div class="statsName">
+                    <span class="label">EASY</span>
+                    <span class="label">MEDIUM</span>
+                    <span class="label">HARD</span>
+                </div>
+                <div class="statsValue">
+                    <div class="stats easy">
+                        <span id="easySolved" class="solvedNumber">0</span>/
+                        <span id="easyTotal" class="totalNumber">0</span>
+                    </div>
+                    <div class="stats medium">
+                        <span id="mediumSolved" class="solvedNumber">0</span>/
+                        <span id="mediumTotal" class="totalNumber">0</span>
+                    </div>
+                    <div class="stats hard">
+                        <span id="hardSolved" class="solvedNumber">0</span>/
+                        <span id="hardTotal" class="totalNumber">0</span>
+                    </div>
+                </div>
+                <div class="circleContainer">
+                    <div class="circle">
+                        <span id="totalSolved" class="totalSolved">0</span>
+                        <span>Solved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="questionOfTheDayContainer" class="questionOfTheDayContainer">QOTD
+        <div id="questionOfTheDay" class="questionOfTheDay"></div>
+    </div>
+
+    <script src="pop-up.js"></script>
+    
+</body>
+</html>
